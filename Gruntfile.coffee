@@ -7,27 +7,6 @@ module.exports = (grunt) ->
   require('matchdep').filterDev('grunt-*').forEach grunt.loadNpmTasks
 
   ###
-  #
-  # The loading of tasks below was written as a part of ng-boilerplate. It is
-  # replaced with our dynamic version above.
-  #
-  grunt.loadNpmTasks 'grunt-contrib-clean'
-  grunt.loadNpmTasks 'grunt-contrib-copy'
-  grunt.loadNpmTasks 'grunt-contrib-jshint'
-  grunt.loadNpmTasks 'grunt-contrib-concat'
-  grunt.loadNpmTasks 'grunt-contrib-watch'
-  grunt.loadNpmTasks 'grunt-contrib-uglify'
-  grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-contrib-less'
-  grunt.loadNpmTasks 'grunt-conventional-changelog'
-  grunt.loadNpmTasks 'grunt-bump'
-  grunt.loadNpmTasks 'grunt-coffeelint'
-  grunt.loadNpmTasks 'grunt-karma'
-  grunt.loadNpmTasks 'grunt-ng-annotate'
-  grunt.loadNpmTasks 'grunt-html2js'
-  ###
-
-  ###
   # Load in our build configuration file.
   ###
   userConfig = require './build.config.coffee'
